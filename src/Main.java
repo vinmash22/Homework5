@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -31,4 +32,23 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
     }
+
+    public static void task3() {
+        System.out.println("Задача 3");
+        int year = 2000;
+        int proverka = year % 4;
+        int proverka1 = year % 100;
+        int proverka2 = year % 400;
+        if (proverka == 0) {
+            if (proverka1 !=0 || proverka2 == 0) {
+                System.out.println(year + " - високосный год");
+            } else {
+                System.out.println(year + " - невисокосный год");
+            }
+        }
+        else {
+            System.out.println(year + " - невисокосный год");
+        }
+    }
 }
+
